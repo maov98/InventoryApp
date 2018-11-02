@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="uriIllegarArgumentException">Cannot query unknown URI"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Product Description: </string>
+    <string name="price">Price: </string>
+    <string name="quantity">Quantity: </string>
+    <string name="supplier">Supplier: </string>
+    <string name="isbn">ISBN: </string>
+    <string name="noInternetConnection">There is not an available network connection. Data could not be loaded!</string>
+    <string name="noData">No available data</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="setting_title">App Settings</string>
+    <string name="listPreference" translatable="false">listPreference</string>
+    <string name="newsDate" translatable="false">newsDate</string>
+    <string name="listArray" translatable="false">listArray</string>
+    <string name="defaultDate">2018-07-25</string>
+    <string name="APIkey">3726085a-e013-4212-8ae5-2811e39ebba2</string>
+    <string name="generalNews">General</string>
+    <string name="newsImageLabel">News Image</string>
+    <string name="emptyViewMessage">No items to display</string>
+    <string name="emptyViewAdd">Empty database, please add inventory items. \n Click on the button below</string>
+    <string name="addInventorymessage">Click on the button below to add inventory</string>
+    <string name="addInventory">Add Inventory</string>
+    <string name="deleteItem">Delete Item(s)</string>
+    <string name="updateItem">Update Item(s)</string>
+    <string name="searchItem">Search Item(s)</string>
+    <string name="addItem">Add Item(s)</string>
+    <string name="homeWelcomeMessage">Welcome to Inventory App\n What would you like to do today?</string>
+    <string name="sale">Sale One Item</string>
+    <string name="supplierPhone">Supplier Phone Number: </string>
+    <string name="updateInventory">Update Inventory</string>
+    <string name="noAvailableData">Data no available</string>
+    <string name="homeMessage1">Current Inventory List</string>
+    <string name="detailFragmentMessage1">Product Details</string>
+    <string name="addInventoryButtonMessage">Add these No of Items to inventory: --></string>
+    <string name="reduceInventoryButtonMessage">Decrease these No of Items to inventory: --></string>
+    <string name="callSUpplier">Call</string>
+    <string name="deleteRecord">Delete Inventory\n Record</string>
+    <string name="updateRecord">Update current Inventory\n Record</string>
+    <string name="detailFragmentMessage2">Click on the list above to see the updated information</string>
+    <string name="editIntent">Edit record</string>
+    <string name="_id">_id</string>
+    <string name="noNegNumber">Negative numbers not allowed</string>
+    <string name="noNullValue">Empty value is not allowed</string>
+    <string name="wrongData">Description, Price, Quantity and Isbn10 fields cannot be empty</string>
+    <string name="successUpdate">Inventory Record successfully updated</string>
+    <string name="updateRecord2">Update record</string>
+    <string name="successAddition">Inventory Record successfully added</string>
+    <string name="failedOperation">Transaction could not be completed</string>
+    <string name="addRecord">Add Inventory Record</string>
+    <string name="mandatoryFields"> Description, Price, Quantity and ISBN are mandatory fields and cannot be empty</string>
+    <string name="addActivitymessage1">Add another record or go back to inventory screen</string>
+    <string name="addScreenTitle">Add Inventory Record-Screen</string>
+    <string name="homeScreenTitle">Inventory Screen</string>
+    <string name="incorrectReductionQuantity">Resquested quantity reduction exceeds current inventory. Record update not completed</string>
+    <string name="successfulDeletion"> Inventory Record successfully deleted</string>
+    <string name="noInventorytoSell">No inventory to sell</string>
+    <string name="unsuccessfulSale">Unsuccessful Sale Operation</string>
+
+</resources>

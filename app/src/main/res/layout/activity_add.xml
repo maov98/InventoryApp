@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/addDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/description"/>
+
+        <EditText
+            android:id="@+id/addQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/quantity"
+            android:inputType="number"
+            android:layout_below="@id/addDescription"/>
+
+        <EditText
+            android:id="@+id/addPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/addQuantity"
+            android:layout_toEndOf="@id/addQuantity"
+            android:layout_below="@id/addDescription"
+            android:layout_marginLeft="40dp"
+            android:hint="@string/price"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/addSupplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_below="@id/addQuantity"
+            android:hint="@string/supplier"
+             />
+
+        <EditText
+            android:id="@+id/addSupplierPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_below="@id/addSupplierName"
+            android:hint="@string/supplierPhone"
+            />
+
+        <EditText
+            android:id="@+id/addIsbn10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/addPrice"
+            android:layout_toEndOf="@id/addPrice"
+            android:layout_below="@id/addDescription"
+            android:layout_marginLeft="40dp"
+            android:inputType="textCapWords"
+            android:hint="@string/isbn"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addItem"
+            android:layout_below="@id/addSupplierPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/addInventoryRecordButton"/>
+
+        <TextView
+            android:id="@+id/addActivityMessage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/addActivitymessage1"
+            android:visibility="invisible"
+            android:layout_below="@id/addInventoryRecordButton"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mandatoryFields"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/addActivityMessage1"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

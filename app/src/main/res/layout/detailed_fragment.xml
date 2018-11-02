@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/detailFragmentBackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detailFragmentMessage1"
+            android:textSize="@dimen/detailFragmentTextSize"
+            android:textColor="#ffffff"
+            android:background="#2979ff"
+            android:textStyle="italic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/generalMargin">
+
+            <TextView
+                android:text="@string/description"
+                style="@style/itemDescription"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailItemDescription"
+                style="@style/itemDescription"
+                android:text=" "
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/generalMargin">
+
+            <TextView
+                android:text="@string/price"
+                style="@style/itemPrice"
+                android:paddingLeft="@dimen/mediumPadding"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailItemPrice"
+                style="@style/itemPrice"
+                android:text=""
+                android:textStyle="italic"/>
+
+            <TextView
+                android:text="@string/quantity"
+                style="@style/itemQuantity"
+                android:paddingLeft="@dimen/mediumPadding"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailItemQuantity"
+                style="@style/itemQuantity"
+                android:text=""
+                android:textStyle="italic"/>
+
+            <TextView
+                style="@style/itemIsbn"
+                android:text="@string/isbn"
+                android:paddingLeft="@dimen/mediumPadding"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailItemISBN"
+                style="@style/itemIsbn"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/generalMargin"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/itemSupplier"
+                android:text="@string/supplier"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailItemSupplier"
+                style="@style/itemSupplier"
+                android:text=" "
+                android:textStyle="italic"/>
+
+            <TextView
+                style="@style/itemSupplierPhone"
+                android:text="@string/supplierPhone"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailItemSupplierPhone"
+                style="@style/itemSupplierPhone"
+                android:text=" "
+                android:textStyle="italic"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/callSupplierButton"
+                android:text="@string/callSUpplier"
+                android:layout_marginLeft="@dimen/reducedPadding"
+                android:drawableRight="@drawable/ic_phone_black_24dp"
+                android:background="#ffab00"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mediumPadding">
+
+            <Button
+                android:id="@+id/detailAddInventoryButton"
+                android:layout_width="@dimen/buttonLength"
+                android:layout_height="@dimen/buttonHeight"
+                android:background="@color/buttonColor5"
+                android:textColor="@color/buttonFonts"
+                android:text="@string/addInventoryButtonMessage"
+                android:layout_marginRight="@dimen/mediumPadding"/>
+
+            <EditText
+                android:id="@+id/itemsToAddField"
+                android:layout_width="@dimen/xxpadding"
+                android:layout_height="@dimen/buttonHeight"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/detailAddInventoryButton"
+                android:layout_marginLeft="@dimen/mediumPadding"
+                android:layout_alignBaseline="@id/detailAddInventoryButton"/>
+
+
+
+            <TextView
+                android:layout_width="@dimen/dividerthickness"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/centerMarker"
+                android:layout_marginRight="@dimen/mediumPadding"
+                android:layout_marginLeft="@dimen/mediumPadding"
+                android:layout_toRightOf="@+id/itemsToAddField"/>
+
+            <Button
+                android:id="@+id/detailReduceInventoryButton"
+                android:layout_width="@dimen/buttonLength"
+                android:layout_height="wrap_content"
+                android:background="@color/buttonColor2"
+                android:textColor="@color/buttonFonts"
+                android:text="@string/reduceInventoryButtonMessage"
+                android:layout_toRightOf="@id/centerMarker"
+                android:layout_marginRight="@dimen/mediumPadding"
+                />
+
+            <EditText
+                android:id="@+id/itemsToDeleteField"
+                android:layout_width="@dimen/xxpadding"
+                android:layout_height="@dimen/buttonHeight"
+                android:inputType="number"
+                android:text="1"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/detailReduceInventoryButton"
+                android:layout_marginLeft="@dimen/mediumPadding"
+                android:layout_alignBaseline="@id/detailReduceInventoryButton"
+
+                />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deleteRecord"
+                android:id="@+id/detailDeleteRecordButton"
+                android:layout_centerHorizontal="true"
+                android:background="@color/buttonColor1"
+                android:textColor="@color/buttonFonts"
+                android:layout_below="@id/detailReduceInventoryButton"
+                android:layout_marginTop="@dimen/reducedPadding"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

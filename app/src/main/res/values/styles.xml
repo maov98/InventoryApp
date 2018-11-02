@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="itemDescription">
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">NewsTitle</item>
+        <item name="android:textSize">@dimen/newsTitleFontSize</item>
+        <item name="android:paddingLeft">@dimen/reducedPadding</item>
+
+
+    </style>
+
+    <style name="itemSupplier">
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">NewsDate</item>
+        <item name="android:textSize">@dimen/newsOtherFontSize</item>
+        <item name="android:textColor">@color/dateFontColor</item>
+        <item name="android:paddingLeft">@dimen/mediumPadding</item>
+
+    </style>
+
+    <style name="itemSupplierPhone">
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">NewsDate</item>
+        <item name="android:textSize">@dimen/newsOtherFontSize</item>
+        <item name="android:textColor">@color/field2Color</item>
+        <item name="android:paddingLeft">@dimen/mediumPadding</item>
+
+    </style>
+
+    <style name="itemPrice">
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">NewsSource</item>
+        <item name="android:textSize">@dimen/newsOtherFontSize</item>
+        <item name="android:textColor">@color/sourceFontColor</item>
+        <item name="android:paddingLeft">@dimen/mediumPadding</item>
+
+    </style>
+    <style name="itemQuantity">
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">NewsSource</item>
+        <item name="android:textSize">@dimen/newsOtherFontSize</item>
+        <item name="android:textColor">@color/field1Color</item>
+        <item name="android:paddingLeft">@dimen/mediumPadding</item>
+
+    </style>
+
+    <style name="itemIsbn">
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">NewsAuthor</item>
+        <item name="android:text">@string/isbn</item>
+        <item name="android:textSize">@dimen/newsOtherFontSize</item>
+        <item name="android:textColor">@color/authorFontColor</item>
+        <item name="android:paddingLeft">@dimen/mediumPadding</item>
+        <item name="android:paddingRight">@dimen/mediumPadding</item>
+
+    </style>
+
+    <style name="itemsImage">
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_width">@dimen/IconSize</item>
+        <item name="android:layout_height">@dimen/IconSize</item>
+        <item name="android:contentDescription">Thumbail</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_marginRight">@dimen/generalMargin</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textSize">@dimen/newsOtherFontSize</item>
+        <item name="android:textColor">@color/authorFontColor</item>
+        <item name="android:paddingLeft">@dimen/reducedPadding</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/no_image</item>
+
+
+    </style>
+
+</resources>

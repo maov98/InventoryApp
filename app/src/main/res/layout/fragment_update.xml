@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Item Name"/>
+
+        <EditText
+            android:id="@+id/editQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"
+            android:layout_below="@id/editDescription"/>
+
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/editQuantity"
+            android:layout_toEndOf="@id/editQuantity"
+            android:layout_below="@id/editDescription"
+            android:layout_marginLeft="40dp"
+            android:hint="Price"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/editSupplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_below="@id/editQuantity"
+            android:hint="Supplier Name"
+            />
+
+        <EditText
+            android:id="@+id/editSupplierPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:layout_below="@id/editSupplierName"
+            android:hint="Supplier Phone Number"
+            />
+
+        <EditText
+            android:id="@+id/editIsbn10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/editPrice"
+            android:layout_toEndOf="@id/editPrice"
+            android:layout_below="@id/editDescription"
+            android:layout_marginLeft="40dp"
+            android:inputType="textCapWords"
+            android:hint="ISBN-10"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updateRecord2"
+            android:layout_below="@id/editSupplierPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/updateInventoryRecordButton"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

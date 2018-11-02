@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/reducedPadding"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="@string/homeMessage1"
+            android:textColor="@color/buttonFonts"
+            android:textSize="@dimen/newsTitleFontSize"
+            android:id="@+id/mainContainerHeader"
+            />
+
+        <ListView
+            android:id="@+id/homeListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerthickness"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/reducedPadding"
+            android:layout_marginBottom="@dimen/reducedPadding"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorAccent"
+            android:backgroundTint="@color/buttonColor1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/reducedPadding"
+            android:layout_marginBottom="@dimen/reducedPadding"
+            android:id="@+id/homeButton2Container">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/homeAddInventoryButton2"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/addRecord"
+                android:textColor="@color/buttonFonts"
+                android:background="@color/black" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerthickness"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/reducedPadding"
+            android:layout_marginBottom="@dimen/reducedPadding"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/detailedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTintMode="src_atop"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/homeEmptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/emptyIcon"
+            android:layout_width="@dimen/IconSize"
+            android:layout_height="@dimen/IconSize"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_add_to_photos_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/homeEmptyViewAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emptyIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/emptyViewAdd"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/homeAddInventoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeEmptyViewAdd"
+            android:layout_centerHorizontal="true"
+            android:text="@string/addRecord" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

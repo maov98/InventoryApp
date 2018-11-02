@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="listArray">
+
+        <item> Politics </item>
+        <item> Sports</item>
+        <item> Technology</item>
+        <item> Science</item>
+        <item> Religion</item>
+
+    </string-array>
+
+    <string-array name="listValues">
+
+        <item> Politics</item>
+        <item> Sports</item>
+        <item> Technology</item>
+        <item> Science</item>
+        <item> Religion</item>
+
+    </string-array>
+
+    <string-array name="defaultArray">
+
+        <item> Politics</item>
+
+
+    </string-array>
+
+</resources>
